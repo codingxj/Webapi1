@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Com.Ctrip.Framework.Apollo.Configuration</name>
+    </assembly>
+    <members>
+        <member name="M:Com.Ctrip.Framework.Apollo.ApolloConfigurationBuilderExtensions.AddDefault(Com.Ctrip.Framework.Apollo.IApolloConfigurationBuilder,Com.Ctrip.Framework.Apollo.Enums.ConfigFileFormat)">
+            <summary>添加默认namespace: application，等价于AddNamespace(ConfigConsts.NamespaceApplication)</summary>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ApolloConfigurationBuilderExtensions.AddNamespace(Com.Ctrip.Framework.Apollo.IApolloConfigurationBuilder,System.String,Com.Ctrip.Framework.Apollo.Enums.ConfigFileFormat)">
+            <summary>添加其他namespace</summary>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ApolloConfigurationBuilderExtensions.AddNamespace(Com.Ctrip.Framework.Apollo.IApolloConfigurationBuilder,System.String,System.String,Com.Ctrip.Framework.Apollo.Enums.ConfigFileFormat)">
+            <summary>添加其他namespace。如果sectionKey为null则添加到root中，可以直接读取，否则使用Configuration.GetSection(sectionKey)读取</summary>
+        </member>
+        <member name="T:Com.Ctrip.Framework.Apollo.ApolloConfigurationManager">
+            <summary>
+            Entry point for client config use
+            </summary>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ApolloConfigurationManager.GetAppConfig">
+            <summary>
+            Get Application's config instance. </summary>
+            <returns> config instance </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ApolloConfigurationManager.GetConfig(System.String)">
+            <summary>
+            Get the config instance for the namespace. </summary>
+            <param name="namespaceName"> the namespace of the config </param>
+            <returns> config instance </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ApolloConfigurationManager.GetConfig(System.String[])">
+            <summary>
+            Get the config instance for the namespace. </summary>
+            <param name="namespaces"> the namespaces of the config, order desc. </param>
+            <returns> config instance </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ApolloConfigurationManager.GetConfig(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Get the config instance for the namespace. </summary>
+            <param name="namespaces"> the namespaces of the config, order desc. </param>
+            <returns> config instance </returns>
+        </member>
+        <member name="F:Com.Ctrip.Framework.Apollo.ApolloOptions._appId">
+            <summary>
+            Get the app id for the current application.
+            </summary>
+            <returns> the app id or ConfigConsts.NO_APPID_PLACEHOLDER if app id is not available</returns>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.ApolloOptions.DataCenter">
+            <summary>
+            Get the data center info for the current application.
+            </summary>
+            <returns> the current data center, null if there is no such info. </returns>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.ApolloOptions.Cluster">
+            <summary>
+            Get the cluster name for the current application.
+            </summary>
+            <returns> the cluster name, or "default" if not specified </returns>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.ApolloOptions.Env">
+            <summary>Default Dev</summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.ApolloOptions.MetaServer">
+            <summary>Default http://localhost:8080</summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.ApolloOptions.Timeout">
+            <summary>ms. Default 5000ms</summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.ApolloOptions.RefreshInterval">
+            <summary>ms. Default 300,000ms</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Com.Ctrip.Framework.Apollo</name>
+    </assembly>
+    <members>
+        <member name="M:Com.Ctrip.Framework.Apollo.ConfigAdapter.XmlConfigurationParser.Read(System.IO.TextReader)">
+            <summary>
+            Read a stream of INI values into a key/value dictionary.
+            </summary>
+            <param name="stream">The stream of INI data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ConfigExtensions.GetProperty(Com.Ctrip.Framework.Apollo.IConfig,System.String,System.String)">
+            <summary>
+            Return the property value with the given key, or
+            {@code defaultValue} if the key doesn't exist. </summary>
+            <param name="config"></param>
+            <param name="key"> the property name </param>
+            <param name="defaultValue"> the default value when key is not found or any error occurred </param>
+            <returns> the property value </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ConfigExtensions.GetProperty(Com.Ctrip.Framework.Apollo.IConfig,System.String,System.String,System.String[])">
+            <summary>
+            Return the array property value with the given key, or {@code defaultValue} if the key doesn't
+            exist.
+            </summary>
+            <param name="config"></param>
+            <param name="key"> the property name </param>
+            <param name="delimiter"> the delimeter regex </param>
+            <param name="defaultValue"> the default value when key is not found or any error occurred </param>
+            <returns> the property value as array </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ConfigExtensions.GetProperty(Com.Ctrip.Framework.Apollo.IConfig,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Return the property value with the given key, or
+            {@code defaultValue} if the key doesn't exist. </summary>
+            <param name="config"></param>
+            <param name="key"> the property name </param>
+            <param name="defaultValue"> the default value when key is not found or any error occurred </param>
+            <returns> the property value as int </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ConfigExtensions.GetProperty(Com.Ctrip.Framework.Apollo.IConfig,System.String,System.Nullable{System.Int64})">
+            <summary>
+            Return the property value with the given key, or
+            {@code defaultValue} if the key doesn't exist. </summary>
+            <param name="config"></param>
+            <param name="key"> the property name </param>
+            <param name="defaultValue"> the default value when key is not found or any error occurred </param>
+            <returns> the property value as long </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ConfigExtensions.GetProperty(Com.Ctrip.Framework.Apollo.IConfig,System.String,System.Nullable{System.Int16})">
+            <summary>
+            Return the property value with the given key, or
+            {@code defaultValue} if the key doesn't exist. </summary>
+            <param name="config"></param>
+            <param name="key"> the property name </param>
+            <param name="defaultValue"> the default value when key is not found or any error occurred </param>
+            <returns> the property value as short </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ConfigExtensions.GetProperty(Com.Ctrip.Framework.Apollo.IConfig,System.String,System.Nullable{System.Single})">
+            <summary>
+            Return the property value with the given key, or
+            {@code defaultValue} if the key doesn't exist. </summary>
+            <param name="config"></param>
+            <param name="key"> the property name </param>
+            <param name="defaultValue"> the default value when key is not found or any error occurred </param>
+            <returns> the property value as float </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ConfigExtensions.GetProperty(Com.Ctrip.Framework.Apollo.IConfig,System.String,System.Nullable{System.Double})">
+            <summary>
+            Return the property value with the given key, or
+            {@code defaultValue} if the key doesn't exist. </summary>
+            <param name="config"></param>
+            <param name="key"> the property name </param>
+            <param name="defaultValue"> the default value when key is not found or any error occurred </param>
+            <returns> the property value as double </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ConfigExtensions.GetProperty(Com.Ctrip.Framework.Apollo.IConfig,System.String,System.Nullable{System.SByte})">
+            <summary>
+            Return the property value with the given key, or
+            {@code defaultValue} if the key doesn't exist. </summary>
+            <param name="config"></param>
+            <param name="key"> the property name </param>
+            <param name="defaultValue"> the default value when key is not found or any error occurred </param>
+            <returns> the property value as sbyte </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.ConfigExtensions.GetProperty(Com.Ctrip.Framework.Apollo.IConfig,System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Return the property value with the given key, or
+            {@code defaultValue} if the key doesn't exist. </summary>
+            <param name="config"></param>
+            <param name="key"> the property name </param>
+            <param name="defaultValue"> the default value when key is not found or any error occurred </param>
+            <returns> the property value as bool </returns>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.IApolloOptions.DataCenter">
+            <summary>
+            Get the data center info for the current application.
+            </summary>
+            <returns> the current data center, null if there is no such info. </returns>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.IApolloOptions.Cluster">
+            <summary>
+            Get the cluster name for the current application.
+            </summary>
+            <returns> the cluster name, or "default" if not specified </returns>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.IApolloOptions.Env">
+            <summary>
+            Get the current environment.
+            </summary>
+            <returns> the env </returns>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.IApolloOptions.Timeout">
+            <summary>ms</summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.IApolloOptions.RefreshInterval">
+            <summary>ms</summary>
+        </member>
+        <member name="T:Com.Ctrip.Framework.Apollo.ConfigChangeEvent">
+            <summary>
+            Config change event fired when there is any config change for the namespace.
+            </summary>
+            <param name="sender"> the sender </param>
+            <param name="args"> the changes </param>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.IConfig.TryGetProperty(System.String,System.String@)">
+            <summary>Return the property value with the given key. </summary>
+            <param name="key"> the property name </param>
+            <param name="value"> the value </param>
+            <returns> true: the key is found; false the key is not found </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.IConfig.GetPropertyNames">
+            <summary>
+            Return a set of the property names
+            </summary>
+            <returns> the property names </returns>
+        </member>
+        <member name="E:Com.Ctrip.Framework.Apollo.IConfig.ConfigChanged">
+            <summary>
+            Config change event subscriber
+            </summary>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Internals.IConfigManager.GetConfig(System.String)">
+            <summary>
+            Get the config instance for the namespace specified. </summary>
+            <param name="namespaceName"> the namespace </param>
+            <returns> the config instance for the namespace </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Internals.ConfigServiceLocator.GetConfigServices">
+            <summary>
+            Get the config service info from remote meta server.
+            </summary>
+            <returns> the services dto </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Internals.IConfigRepository.GetConfig">
+            <summary>
+            Get the config from this repository. </summary>
+            <returns> config </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Internals.IConfigRepository.AddChangeListener(Com.Ctrip.Framework.Apollo.Internals.IRepositoryChangeListener)">
+            <summary>
+            Add change listener. </summary>
+            <param name="listener"> the listener to observe the changes </param>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Internals.IConfigRepository.RemoveChangeListener(Com.Ctrip.Framework.Apollo.Internals.IRepositoryChangeListener)">
+            <summary>
+            Remove change listener. </summary>
+            <param name="listener"> the listener to remove </param>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Internals.MultiConfig.#ctor(System.Collections.Generic.IEnumerable{Com.Ctrip.Framework.Apollo.IConfig})">
+            <param name="configs">order desc</param>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Internals.IRepositoryChangeListener.OnRepositoryChange(System.String,Com.Ctrip.Framework.Apollo.Core.Utils.Properties)">
+            <summary>
+            Invoked when config repository changes. </summary>
+            <param name="namespaceName"> the namespace of this repository change </param>
+            <param name="newProperties"> the properties after change </param>
+        </member>
+        <member name="T:Com.Ctrip.Framework.Apollo.Model.ConfigChange">
+            <summary>
+            Holds the information for a config change.
+            </summary>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Model.ConfigChange.#ctor(Com.Ctrip.Framework.Apollo.IConfig,System.String,System.String,System.String,Com.Ctrip.Framework.Apollo.Enums.PropertyChangeType)">
+            <summary>
+            Constructor. </summary>
+            <param name="config"> the config of the key </param>
+            <param name="propertyName"> the key whose value is changed </param>
+            <param name="oldValue"> the value before change </param>
+            <param name="newValue"> the value after change </param>
+            <param name="changeType"> the change type </param>
+        </member>
+        <member name="T:Com.Ctrip.Framework.Apollo.Model.ConfigChangeEventArgs">
+            <summary>
+            Config change event args
+            </summary>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Model.ConfigChangeEventArgs.#ctor(Com.Ctrip.Framework.Apollo.IConfig,System.Collections.Generic.IDictionary{System.String,Com.Ctrip.Framework.Apollo.Model.ConfigChange})">
+            <summary>
+            Constructor. </summary>
+            <param name="config"> the namespace of this change </param>
+            <param name="changes"> the actual changes </param>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.Model.ConfigChangeEventArgs.ChangedKeys">
+            <summary>
+            Get the keys changed. </summary>
+            <returns> the list of the keys </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Model.ConfigChangeEventArgs.GetChange(System.String)">
+            <summary>
+            Get a specific change instance for the key specified. </summary>
+            <param name="key"> the changed key </param>
+            <returns> the change instance </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Model.ConfigChangeEventArgs.IsChanged(System.String)">
+            <summary>
+            Check whether the specified key is changed </summary>
+            <param name="key"> the key </param>
+            <returns> true if the key is changed, false otherwise. </returns>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.Model.ConfigChangeEventArgs.Config">
+            <summary>
+            Get the namespace of this change event. </summary>
+            <returns> the namespace </returns>
+        </member>
+        <member name="T:Com.Ctrip.Framework.Apollo.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.Resources.Error_InvalidFilePath">
+            <summary>
+              查找类似 File path must be a non-empty string. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.Resources.Error_KeyIsDuplicated">
+            <summary>
+              查找类似 A duplicate key &apos;{0}&apos; was found.{1} 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.Resources.Error_NamespaceIsNotSupported">
+            <summary>
+              查找类似 XML namespaces are not supported.{0} 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.Resources.Error_UnsupportedNodeType">
+            <summary>
+              查找类似 Unsupported node type &apos;{0}&apos; was found.{1} 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:Com.Ctrip.Framework.Apollo.Resources.Msg_LineInfo">
+            <summary>
+              查找类似  Line {0}, position {1}. 的本地化字符串。
+            </summary>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Spi.IConfigFactory.Create(System.String)">
+            <summary>
+            Create the config instance for the namespace.
+            </summary>
+            <param name="namespaceName"> the namespace </param>
+            <returns> the newly created config instance </returns>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Spi.IConfigRegistry.Register(System.String,Com.Ctrip.Framework.Apollo.Spi.IConfigFactory)">
+            <summary>
+            Register the config factory for the namespace specified.
+            </summary>
+            <param name="namespaceName"> the namespace </param>
+            <param name="factory">   the factory for this namespace </param>
+        </member>
+        <member name="M:Com.Ctrip.Framework.Apollo.Spi.IConfigRegistry.GetFactory(System.String)">
+            <summary>
+            Get the registered config factory for the namespace.
+            </summary>
+            <param name="namespaceName"> the namespace </param>
+            <returns> the factory registered for this namespace </returns>
+        </member>
+        <member name="F:Com.Ctrip.Framework.Apollo.Util.Http.Signature.AuthorizationFormat">
+            <summary>Authorization=Apollo {appId}:{sign}</summary>
+        </member>
+    </members>
+</doc>

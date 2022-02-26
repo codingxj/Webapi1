@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "NabjsRJJgP7pSqVBtgG8XQSUYOk+5lN+akNVQ3fXDPMI25/URmvPCrf0RHn80nP2yfIAufNcQ70yl8JNyVk9Qg==",
+  "success": true,
+  "projectFilePath": "E:\\Coding\\.net 高级\\Docker\\DockerApplication\\Webapi1\\Webapi1\\Webapi1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xuj\\.nuget\\packages\\com.ctrip.framework.apollo\\2.3.0\\com.ctrip.framework.apollo.2.3.0.nupkg.sha512",
+    "C:\\Users\\xuj\\.nuget\\packages\\com.ctrip.framework.apollo.configuration\\2.3.0\\com.ctrip.framework.apollo.configuration.2.3.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.configuration\\2.1.1\\microsoft.extensions.configuration.2.1.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.configuration.abstractions\\2.1.1\\microsoft.extensions.configuration.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.configuration.binder\\2.1.1\\microsoft.extensions.configuration.binder.2.1.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.primitives\\2.1.1\\microsoft.extensions.primitives.2.1.1.nupkg.sha512",
+    "C:\\Users\\xuj\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
