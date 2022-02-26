@@ -30,7 +30,7 @@ namespace Webapi1
             {
                 options.AddPolicy(name: "a", builder => builder.WithOrigins("http://localhost:5005"));
 
-                options.AddPolicy("b",builder => builder.AllowAnyOrigin());
+                options.AddPolicy("b",builder => builder.AllowAnyOrigin());  
             });
         }
 
