@@ -24,7 +24,7 @@ namespace Webapi1.Controllers
         public string Index()
         {
             string value = _configration.GetValue<string>("timeout");
-            return value;
+            return "hello Linux";
         }
 
     }
