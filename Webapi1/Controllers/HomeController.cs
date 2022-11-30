@@ -18,7 +18,7 @@ namespace Webapi1.Controllers
 
         public HomeController(IConfiguration configration)
         {
-            _configration = configration;
+            _configration = configration ;
         }
         [EnableCors("b")]
         public string Index()
